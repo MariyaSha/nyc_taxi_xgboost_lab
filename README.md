@@ -18,11 +18,11 @@ You’ll see how professionals approach problems, handle massive data, and fix m
 ## Project Files 🗃️
 
 - **Distilled_2023_Yellow_Taxi_Trip_Data.csv**
-  a smaller, 5 million records, version of the <a href="https://data.cityofnewyork.us/Transportation/2023-Yellow-Taxi-Trip-Data/4b4i-vvec/about_data" target="_blank">2023 Yellow Taxi Trip Data</a> from the City of New York.
+  <br>a smaller, 5 million records, version of the <a href="https://data.cityofnewyork.us/Transportation/2023-Yellow-Taxi-Trip-Data/4b4i-vvec/about_data" target="_blank">2023 Yellow Taxi Trip Data</a> from the City of New York.
 - **TutorialWorkflow.ipynb**
-  Tne official tutorial notebook from the video. A step by step workflow for beginners.
+  <br>Tne official tutorial notebook from the video. A step by step workflow for beginners.
 - **AdvancedWorkflow.ipynb**
-  A "Best Practices" version of the tutorial workflow above with K-Fold validation and hyperparameter tuning.
+  <br>A "Best Practices" version of the tutorial workflow above with K-Fold validation and hyperparameter tuning.
   
 ---
 
@@ -51,10 +51,16 @@ data.tail()
 
 ### 2️⃣ Local Setup  
 - Requires a **CUDA-compatible GPU**  
-- Recommended: **WSL + Miniforge/Conda** (other setups may fail)  
-- Install RAPIDS following the [official installation guide](https://docs.rapids.ai/install/)  
 - Use the full **NYC Taxi Dataset (≈ 38 million rows)**  
-  [Download from NYC Open Data →](https://data.cityofnewyork.us/Transportation/2023-Yellow-Taxi-Trip-Data/4b4i-vvec/about_data)
+  [Download from NYC Open Data](https://data.cityofnewyork.us/Transportation/2023-Yellow-Taxi-Trip-Data/4b4i-vvec/about_data)
+- Use **WSL + Miniforge/Conda** (other setups may fail)  
+- Install modules using the [RAPIDS installation guide](https://docs.rapids.ai/install/)  
+- For example: the **xgb_env** environment setup command from my video:
+```
+conda create -n xgb_env -c rapidsai-nightly -c conda-forge -c nvidia  \
+    cudf=25.12 python=3.13 'cuda-version=13.0' \
+    jupyterlab xgboost matplotlib
+```
 
 ---
 
