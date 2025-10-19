@@ -64,7 +64,15 @@ conda create -n xgb_env -c rapidsai-nightly -c conda-forge -c nvidia  \
 
 ---
 
-## 🌟 Credits
+## Credits 🌟
 
 Created with ❤️ by **[Mariya Sha](https://www.linkedin.com/in/mariyasha888)**  
 Part of the **[Python Simplified](https://youtube.com/@PythonSimplified)** educational YouTube channel.
+
+Beautiful thumbnail icon assembled from: https://flaticon.com
+
+---
+
+### Keywords 🔑
+machine learning, data science, xgboost, cudf, rapids, python, pandas, gpu acceleration, big data, beginner project, real-world dataset, nyc taxi, kaggle alternative, portfolio project, ai tutorial, python simplified
+
